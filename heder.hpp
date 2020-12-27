@@ -22,11 +22,17 @@ class numgame
     string g;
     int conn;
     sqlite3 *db;
+    string sql;
     public:
     void init()
     {
         this->answer = randoms();
         this->conn = sqlite3_open("game.db",&db);
+        sql="create table game.user("
+        "id primari key autoincrement"
+        "username text not null"
+        "password text not null";
+        sqlite3_exec(this->db,sql.c_str());
     };
     void input()
     {
