@@ -78,7 +78,6 @@ class numgame
     }
     void run()
     {
-        this->init();
         this->cmp();
         this->delobj();
     };
