@@ -32,7 +32,6 @@ class numgame
         "id primari key autoincrement"
         "username text not null"
         "password text not null";
-        
     };
     void input()
     {
