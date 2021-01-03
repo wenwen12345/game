@@ -3,3 +3,5 @@ workspace.code-workspace
 mange
 game.db
 header
+cmake-build-debug/**
+CMakeLists.txt
