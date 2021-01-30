@@ -31,7 +31,7 @@ class numgame
         sql="create table game.user("
         "id primari key autoincrement"
         "username text not null"
-        "password text not null";
+        "password text not null);";
         sqlite3_exec(db,sql.c_str(),nullptr,nullptr,nullptr);
     };
     void input()
