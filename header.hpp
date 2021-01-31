@@ -28,7 +28,7 @@ class numgame
     {
         this->answer = randoms();
         this->conn = sqlite3_open("game.db",&db);
-        sql="create table game.user("
+        sql="create table user("
         "id primari key autoincrement"
         "username text not null"
         "password text not null);";
